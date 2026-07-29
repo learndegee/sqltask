@@ -1,0 +1,26 @@
+SELECT * from emp;
+SELECT ename from emp;
+SELECT ename, sal from emp;
+SELECT ename, comm from emp;
+SELECT empno, deptno from emp;
+SELECT ename, hiredate from emp;
+SELECT ename, job from emp;
+SELECT ename, job, sal from emp;
+SELECT dname from dept;
+SELECT dname, loc from dept;
+
+SELECT sal*12 from emp where ename="smith";
+SELECT ename from emp where job="clerk";
+SELECT sal from emp where job="salesman";
+SELECT sal from emp where sal>2000;
+SELECT * from emp where ename = "jones";
+SELECT * from emp where hiredate > "1981-01-01";
+SELECT ename, sal, sal*12 as annual_sal from emp where (sal*12)>12000;
+SELECT * from emp where deptno=30;
+SELECT ename, hiredate from emp where hiredate<"1981-01-01";
+SELECT * from emp where job="manager";
+SELECT ename, sal from emp where comm=1400;
+SELECT * from emp where sal>comm;
+SELECT empno from emp where hiredate < "1987-01-01";
+SELECT * from emp where job="Analyst";
+SELECT * from emp where sal>2000;
