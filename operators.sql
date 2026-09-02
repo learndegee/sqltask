@@ -1,0 +1,20 @@
+SELECT * from emp where job="CLERK" and sal<1500;
+SELECT ename, hiredate from emp where job="MANAGER" and deptno=30;
+SELECT *, (sal*12) as Annual_sal from emp where deptno=30 and job = 'SALESMAN' and (sal*12)>14000;
+SELECT * from emp where deptno=30 or job="Analyst";
+SELECT ename from emp where sal<1100 and job ="clerk";
+SELECT ename, sal, deptno, (sal*12)  as Annual_Salary from emp 
+where deptno=20 and sal > 1100 and (sal*12)>12000;
+SELECT empno, ename from emp where job="manager" and deptno=20;
+SELECT * from emp where deptno=20 or deptno=30;
+SELECT* from emp where job="Analyst" and deptno=10;
+SELECT * from emp where job="president" and sal=4000;
+SELECT ename, deptno, job from emp where job ='CLERK' and deptno in (10,20);
+SELECT ename from emp where deptno in (10,20,30,40);
+SELECT * from emp where empno in (7902, 7839);
+SELECT * from emp where job in ("manager", "salesman", "clerk");
+SELECT ename from emp where hiredate >"1981-01-01" and hiredate<"1987-01-01";
+SELECT * from emp where sal>1250 and sal<3000;
+SELECT ename from emp where hiredate >"1981-01-01" and deptno in (10,30);
+SELECT ename, sal*12 as Annual_Salary from emp where job in ("manager","clerk") and deptno in (10,30);
+SELECT *, (sal*12) as Annual_Salary from emp where (sal between 1000 and 4000) and (sal*12)>15000;
